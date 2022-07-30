@@ -1,4 +1,4 @@
-# Transformer-based Knowledge Distillation for Efficient Semantic Segmentation of Road-driving Scenes [[arxiv](https://arxiv.org/abs/2202.13393)]
+# Transformer Knowledge Distillation for Efficient Semantic Segmentation [[arxiv](https://arxiv.org/abs/2202.13393)]
 ## Structure: TransKD
 ![](https://github.com/RuipingL/SKR_PEA/blob/main/structure.PNG)
 ## Introduction
