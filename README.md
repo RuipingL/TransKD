@@ -1,6 +1,6 @@
 # Transformer Knowledge Distillation for Efficient Semantic Segmentation [[arxiv](https://arxiv.org/abs/2202.13393)]
 ## Structure: TransKD
-![]([https://github.com/RuipingL/TransKD/blob/main/TransKDs.png])
+![](TransKDs.png])
 ## Introduction
 We propose the structural framework, TransKD, to distill the knowledge from feature maps and patch embeddings of vision transformers.
 ## Usage
