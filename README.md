@@ -10,3 +10,14 @@ Example:
 ```
 python train_TransKD/train_transkd.py --datadir /path/to/data --kdtype TransKD-Base
 ```
+
+## Publication
+If you find this repo useful, please consider referencing the following paper [[PDF](https://arxiv.org/pdf/2202.13393)]:
+```
+@article{liu2022transkd,
+  title={TransKD: Transformer Knowledge Distillation for Efficient Semantic Segmentation},
+  author={Liu, Ruiping and Yang, Kailun and Roitberg, Alina and Zhang, Jiaming and Peng, Kunyu and Liu, Huayao and Stiefelhagen, Rainer},
+  journal={arXiv preprint arXiv:2202.13393},
+  year={2022}
+}
+```
