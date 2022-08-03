@@ -18,6 +18,9 @@ mmcv-full == 1.3.10
 numpy
 visdom
 ```
+Datasets:
+* Cityscapes: download `gtFine_trainvaltest.zip` and `leftImg8bit_trainvaltest.zip` from [cityscapes official website](https://www.cityscapes-dataset.com/downloads/), then prepare the 19-class label with the `createTrainIdLabelImgs.py` file from [cityscapesscripts](https://github.com/mcordts/cityscapesScripts/tree/master/cityscapesscripts/preparation).
+
 ## Usage
 download [teacher checkpoints](https://1drv.ms/u/s!AlFXMOI-DJJhn3qvs5TOQlaWbbVr?e=ohlhOU) in the folder `checkpoints/`.
 
