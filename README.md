@@ -3,6 +3,21 @@
 ![TransKD](TransKDs.png)
 ## Introduction
 We propose the structural framework, TransKD, to distill the knowledge from feature maps and patch embeddings of vision transformers.
+## Requirements
+Environment: create a conda environment and activate it
+```
+conda create -n TransKD python=3.6
+conda activate TransKD
+```
+Additional python pachages:
+```
+pytorch == 1.7.1+cu92
+torchvision == 0.8.2+cu92
+mmsegmentation == 0.15.0
+mmcv-full == 1.3.10
+numpy
+visdom
+```
 ## Usage
 download [teacher checkpoints](https://1drv.ms/u/s!AlFXMOI-DJJhn3qvs5TOQlaWbbVr?e=ohlhOU) in the folder `checkpoints/`.
 
