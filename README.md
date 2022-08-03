@@ -9,7 +9,7 @@ Environment: create a conda environment and activate it
 conda create -n TransKD python=3.6
 conda activate TransKD
 ```
-Additional python pachages:
+Additional python pachages: [poly scheduler](https://github.com/cmpark0126/pytorch-polynomial-lr-decay) and
 ```
 pytorch == 1.7.1+cu92
 torchvision == 0.8.2+cu92
