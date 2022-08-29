@@ -26,7 +26,7 @@ download [teacher checkpoints](https://1drv.ms/u/s!AlFXMOI-DJJhn3qvs5TOQlaWbbVr?
 
 Example:
 ```
-python train_TransKD/train_transkd.py --datadir /path/to/data --kdtype TransKD-Base
+python train/train_transkd.py --datadir /path/to/data --kdtype TransKD-Base
 ```
 
 ## Publication
