@@ -22,7 +22,8 @@ Datasets:
 * Cityscapes: download `gtFine_trainvaltest.zip` and `leftImg8bit_trainvaltest.zip` from [cityscapes official website](https://www.cityscapes-dataset.com/downloads/), then prepare the 19-class label with the `createTrainIdLabelImgs.py` from [cityscapesscripts](https://github.com/mcordts/cityscapesScripts/tree/master/cityscapesscripts/preparation).
 
 ## Model Zoo
-Download the following weights to the folder `outputs`.
+Download the following weights to the folder `outputs\`.
+
 Cityscapes:
 |Network      |#Params(M)|GFLOPs|mIoU(%)|weight|
 |:------------|:---------|:-----|:------|:-----|
@@ -45,7 +46,21 @@ ACDC:
 |+TransKD-EA  |59.09  |[Google Drive](https://drive.google.com/file/d/1FpTdOkmjy2p48R6cezi43J2HbOVVuUA1/view?usp=drive_link)|
 
 ## Training
+```
+cd train
+CUDA_VISIBLE_DEVICES=0 python TransKDBase.py --dataset cityscapes --dataset /path/to/cityscapes #--dataset ACDC --dataset /path/to/ACDC
+CUDA_VISIBLE_DEVICES=0 python TransKD_GLMixer.py --dataset cityscapes --dataset /path/to/cityscapes #--dataset ACDC --dataset /path/to/ACDC
+CUDA_VISIBLE_DEVICES=0 python TransKD_EA.py --dataset cityscapes --dataset /path/to/cityscapes #--dataset ACDC --dataset /path/to/ACDC
+```
 ## Evaluation
+```
+cd eval
+CUDA_VISIBLE_DEVICES=0 python eval_cityscapes_iou.py --distillation-type TransKDBase
+CUDA_VISIBLE_DEVICES=0 python eval_cityscapes_color.py --distillation-type TransKDBase
+CUDA_VISIBLE_DEVICES=0 python eval_ACDC_iou.py --distillation-type TransKDBase
+CUDA_VISIBLE_DEVICES=0 python eval_ACDC_color.py --distillation-type TransKDBase
+# distillation-type can be choices=['teacher','student','TransKDBase','TransKD_GL','TransKD_EA']
+```
 
 
 ## Publication
