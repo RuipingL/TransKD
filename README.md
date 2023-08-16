@@ -21,13 +21,27 @@ visdom
 Datasets:
 * Cityscapes: download `gtFine_trainvaltest.zip` and `leftImg8bit_trainvaltest.zip` from [cityscapes official website](https://www.cityscapes-dataset.com/downloads/), then prepare the 19-class label with the `createTrainIdLabelImgs.py` from [cityscapesscripts](https://github.com/mcordts/cityscapesScripts/tree/master/cityscapesscripts/preparation).
 
-## Usage
-download [teacher checkpoints](https://1drv.ms/u/s!AlFXMOI-DJJhn3qvs5TOQlaWbbVr?e=ohlhOU) in the folder `checkpoints/`.
+## Model Zoo
+Cityscapes:
+|Network      |#Params(M)|GFLOPs|mIoU(%)|weight|
+|:------------|:---------|:-----|:------|:-----|
+|Teacher(B2)  |27.36     |113.84|76.49  |[Google Drive](https://drive.google.com/file/d/1mixZrRm-nSOhIjM4ltI_wegc14iciZZS/view?usp=drive_link)|
+|Student(B0)  |3.72      |13.67 |55.86  |[Google Drive](https://drive.google.com/file/d/1BCA2LHtWSSUzF0xbWELwLw66SdduYJ3X/view?usp=drive_link)|
+|+TransKD-Base|4.56      |16.47 |68.58  |[Google Drive](https://drive.google.com/file/d/1KkQ2IfEfQnisWle4yob3JDEBYvGsGvhn/view?usp=drive_link)|
+|+TransKD-GL  |5.22      |16.80 |68.87  |[Google Drive](https://drive.google.com/file/d/1MSQkF8wbC-QPy9vFQOazjkEOKPbUK1i0/view?usp=drive_link)|
+|+TransKD-EA  |5.53      |17.84 |68.98  |[Google Drive](https://drive.google.com/file/d/1NejCOa2S5t8_8ooJT1Yauzrz-POCwr5H/view?usp=drive_link)|
 
-Example:
-```
-python train/train_transkd.py --datadir /path/to/data --kdtype TransKD-Base
-```
+ACDC: 
+|Network      |mIoU(%)|weight|
+|:------------|:------|:-----|
+|Teacher(B2)  |69.34  |[Google Drive](https://drive.google.com/file/d/1o-z_Jaty4ENJ2ruvVMGUng1yOKamMxU1/view?usp=drive_link)|
+|Student(B0)  |46.26  |[Google Drive](https://drive.google.com/file/d/1JL-yXf4izAwHScLN3Vt330HQjs1V4B-a/view?usp=drive_link)|
+|+TransKD-Base|58.56  |[Google Drive](https://drive.google.com/file/d/1B_7p-31WKtXuWm1CPW0l9mBISUkMjZnk/view?usp=drive_link)|
+|+TransKD-GL  |58.13  |[Google Drive](https://drive.google.com/file/d/1ZRi7mUXXDYFpO4MRC5ekPCqoSQwFYgYt/view?usp=drive_link)|
+|+TransKD-EA  |59.09  |[Google Drive](https://drive.google.com/file/d/1FpTdOkmjy2p48R6cezi43J2HbOVVuUA1/view?usp=drive_link)|
+## Training
+## Evaluation
+
 
 ## Publication
 If you find this repo useful, please consider referencing the following paper [[PDF](https://arxiv.org/pdf/2202.13393)]:
