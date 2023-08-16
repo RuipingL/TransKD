@@ -24,7 +24,6 @@ Datasets:
 
 
 ## Model Zoo
-Download the following weights to the folder `outputs\`.
 
 Cityscapes:
 |Network      |#Params(M)|GFLOPs|mIoU(%)|weight|
@@ -48,6 +47,7 @@ ACDC:
 |+TransKD-EA  |59.09  |[Google Drive](https://drive.google.com/file/d/1FpTdOkmjy2p48R6cezi43J2HbOVVuUA1/view?usp=drive_link)|
 
 ## Training
+Download pretrained weights ([SegFormer](https://drive.google.com/drive/folders/1b7bwrInTW4VLEm27YawHOAMSMikga2Ia?usp=sharing) and [PVTv2](https://github.com/whai362/PVT/tree/v2/classification)) to the folder `\train\ckpt_pretained\`.
 ```
 cd train
 CUDA_VISIBLE_DEVICES=0 python TransKDBase.py --dataset cityscapes --dataset /path/to/cityscapes #--dataset ACDC --dataset /path/to/ACDC
@@ -55,6 +55,7 @@ CUDA_VISIBLE_DEVICES=0 python TransKD_GLMixer.py --dataset cityscapes --dataset 
 CUDA_VISIBLE_DEVICES=0 python TransKD_EA.py --dataset cityscapes --dataset /path/to/cityscapes #--dataset ACDC --dataset /path/to/ACDC
 ```
 ## Evaluation
+Download trained weights ([Google Drive](https://drive.google.com/drive/folders/1vHRH3nUCdKVSrOe_VX_L9GrcJNytmUAj?usp=drive_link)) to the folder `\outputs`.
 ```
 cd eval
 CUDA_VISIBLE_DEVICES=0 python eval_cityscapes_iou.py --distillation-type TransKDBase
