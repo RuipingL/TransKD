@@ -7,6 +7,7 @@ We propose the structural framework, TransKD, to distill the knowledge from feat
 <div align=center>
 <img src="https://github.com/RuipingL/TransKD/blob/main/Paradigm.png" width="400">
 </div>
+(a)-(c) Knowledge distillation in computer vision is split into three categories: response-based knowledge distillation, feature-based knowledge distillation, and relation-based knowledge distillation. (d) TransKD extracts the relation-based knowledge of feature maps and transformer-specific patch embedding knowledge at each stage.
 
 ## Requirements
 Environment: create a conda environment and activate it
