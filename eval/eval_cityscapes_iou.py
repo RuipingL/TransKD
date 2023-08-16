@@ -40,7 +40,7 @@ target_transform_cityscapes = Compose([
 def main(args):
 
     import sys
-    PROJ_DIR = '/path/to/TransKD_pytorch'
+    PROJ_DIR = '/path/to/TransKD'
     sys.path.append(os.path.join(PROJ_DIR, 'train/'))
     if args.distillation_type == 'teacher':
         from models.Segformer_ import mit_b2
