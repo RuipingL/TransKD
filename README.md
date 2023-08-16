@@ -31,6 +31,8 @@ Cityscapes:
 |+TransKD-Base|4.56      |16.47 |68.58  |[Google Drive](https://drive.google.com/file/d/1KkQ2IfEfQnisWle4yob3JDEBYvGsGvhn/view?usp=drive_link)|
 |+TransKD-GL  |5.22      |16.80 |68.87  |[Google Drive](https://drive.google.com/file/d/1MSQkF8wbC-QPy9vFQOazjkEOKPbUK1i0/view?usp=drive_link)|
 |+TransKD-EA  |5.53      |17.84 |68.98  |[Google Drive](https://drive.google.com/file/d/1NejCOa2S5t8_8ooJT1Yauzrz-POCwr5H/view?usp=drive_link)|
+
+
 [PVTv2 teacher](https://drive.google.com/file/d/1D5IDzWe1uEzuGqXnDHsF_n5U0cvh1I8t/view?usp=drive_link)
 
 ACDC: 
