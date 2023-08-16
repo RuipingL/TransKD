@@ -4,7 +4,7 @@
 ## Introduction
 We propose the structural framework, TransKD, to distill the knowledge from feature maps and patch embeddings of vision transformers. TransKD enables the non-pretrained vision transformers perform on-par with the pretrained ones.
 
-<img src="https://github.com/RuipingL/TransKD/blob/main/Paradigm.png" width="600">
+<img src="https://github.com/RuipingL/TransKD/blob/main/Paradigm.png" width="400">
 
 ## Requirements
 Environment: create a conda environment and activate it
