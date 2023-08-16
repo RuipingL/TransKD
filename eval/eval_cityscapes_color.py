@@ -70,7 +70,7 @@ def main(args):
         os.makedirs(savedir)
     # modelpath = args.loadDir + args.loadModel
     import sys
-    PROJ_DIR = '/path/to/TransKD_pytorch'
+    PROJ_DIR = '/path/to/TransKD'
     sys.path.append(os.path.join(PROJ_DIR, 'train/'))
     if args.distillation_type == 'teacher':
         from models.Segformer import mit_b2
