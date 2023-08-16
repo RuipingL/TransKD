@@ -22,6 +22,7 @@ Datasets:
 * Cityscapes: download `gtFine_trainvaltest.zip` and `leftImg8bit_trainvaltest.zip` from [cityscapes official website](https://www.cityscapes-dataset.com/downloads/), then prepare the 19-class label with the `createTrainIdLabelImgs.py` from [cityscapesscripts](https://github.com/mcordts/cityscapesScripts/tree/master/cityscapesscripts/preparation).
 
 ## Model Zoo
+Download the following weights to the folder `outputs`.
 Cityscapes:
 |Network      |#Params(M)|GFLOPs|mIoU(%)|weight|
 |:------------|:---------|:-----|:------|:-----|
@@ -30,6 +31,7 @@ Cityscapes:
 |+TransKD-Base|4.56      |16.47 |68.58  |[Google Drive](https://drive.google.com/file/d/1KkQ2IfEfQnisWle4yob3JDEBYvGsGvhn/view?usp=drive_link)|
 |+TransKD-GL  |5.22      |16.80 |68.87  |[Google Drive](https://drive.google.com/file/d/1MSQkF8wbC-QPy9vFQOazjkEOKPbUK1i0/view?usp=drive_link)|
 |+TransKD-EA  |5.53      |17.84 |68.98  |[Google Drive](https://drive.google.com/file/d/1NejCOa2S5t8_8ooJT1Yauzrz-POCwr5H/view?usp=drive_link)|
+[PVTv2 teacher](https://drive.google.com/file/d/1D5IDzWe1uEzuGqXnDHsF_n5U0cvh1I8t/view?usp=drive_link)
 
 ACDC: 
 |Network      |mIoU(%)|weight|
@@ -39,6 +41,7 @@ ACDC:
 |+TransKD-Base|58.56  |[Google Drive](https://drive.google.com/file/d/1B_7p-31WKtXuWm1CPW0l9mBISUkMjZnk/view?usp=drive_link)|
 |+TransKD-GL  |58.13  |[Google Drive](https://drive.google.com/file/d/1ZRi7mUXXDYFpO4MRC5ekPCqoSQwFYgYt/view?usp=drive_link)|
 |+TransKD-EA  |59.09  |[Google Drive](https://drive.google.com/file/d/1FpTdOkmjy2p48R6cezi43J2HbOVVuUA1/view?usp=drive_link)|
+
 ## Training
 ## Evaluation
 
