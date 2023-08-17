@@ -1,7 +1,7 @@
 # Transformer Knowledge Distillation for Efficient Semantic Segmentation [[arxiv](https://arxiv.org/abs/2202.13393)]
 ## Structure: TransKD
 <div align=center>
-<img src="https://github.com/RuipingL/TransKD/blob/main/TransKDs.png" width="800">
+<img src="https://github.com/RuipingL/TransKD/blob/main/TransKDs.png" width="600">
 </div>
 
 ## Introduction
