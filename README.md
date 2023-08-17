@@ -70,7 +70,8 @@ CUDA_VISIBLE_DEVICES=0 python eval_ACDC_iou.py --distillation-type TransKDBase
 CUDA_VISIBLE_DEVICES=0 python eval_ACDC_color.py --distillation-type TransKDBase
 # distillation-type can be choices=['teacher','student','TransKDBase','TransKD_GL','TransKD_EA']
 ```
-
+## Acknowledgement
+Our framework is build upon [Knowledge Review](https://arxiv.org/abs/2104.09044) and [Erfnet](https://github.com/Eromera/erfnet_pytorch). Thanks to there superior work!
 
 ## Publication
 If you find this repo useful, please consider referencing the following paper [[PDF](https://arxiv.org/pdf/2202.13393)]:
