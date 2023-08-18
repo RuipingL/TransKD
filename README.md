@@ -33,7 +33,7 @@ Datasets:
 
 
 ## Model Zoo
-
+Download the following weights to the folder `\outputs`.
 Cityscapes:
 |Network      |#Params(M)|GFLOPs|mIoU(%)|weight|
 |:------------|:---------|:-----|:------|:-----|
@@ -68,8 +68,14 @@ Download trained weights ([Google Drive](https://drive.google.com/drive/folders/
 ```
 cd eval
 CUDA_VISIBLE_DEVICES=0 python eval_cityscapes_iou.py --distillation-type TransKDBase
-CUDA_VISIBLE_DEVICES=0 python eval_cityscapes_color.py --distillation-type TransKDBase
 CUDA_VISIBLE_DEVICES=0 python eval_ACDC_iou.py --distillation-type TransKDBase
+# distillation-type can be choices=['teacher','student','TransKDBase','TransKD_GL','TransKD_EA']
+```
+## Inference
+Download trained weights ([Google Drive](https://drive.google.com/drive/folders/1vHRH3nUCdKVSrOe_VX_L9GrcJNytmUAj?usp=drive_link)) to the folder `\outputs`.
+```
+cd eval
+CUDA_VISIBLE_DEVICES=0 python eval_cityscapes_color.py --distillation-type TransKDBase
 CUDA_VISIBLE_DEVICES=0 python eval_ACDC_color.py --distillation-type TransKDBase
 # distillation-type can be choices=['teacher','student','TransKDBase','TransKD_GL','TransKD_EA']
 ```
