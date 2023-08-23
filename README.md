@@ -27,6 +27,10 @@ mmcv-full == 1.3.10
 numpy
 visdom
 ```
+Or simply:
+```
+pip install -r requirements.txt
+```
 Datasets:
 * Cityscapes: download `gtFine_trainvaltest.zip` and `leftImg8bit_trainvaltest.zip` from [cityscapes official website](https://www.cityscapes-dataset.com/downloads/), then prepare the 19-class label with the `createTrainIdLabelImgs.py` from [cityscapesscripts](https://github.com/mcordts/cityscapesScripts/tree/master/cityscapesscripts/preparation).
 * ACDC： download `gt_trainval.zip` and `rgb_anon_trainvaltest.zip` from [ACDC official website](https://acdc.vision.ee.ethz.ch/download).
