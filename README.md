@@ -89,10 +89,14 @@ Our framework is build upon [Knowledge Review](https://arxiv.org/abs/2104.09044)
 ## Publication
 If you find this repo useful, please consider referencing the following paper [[PDF](https://arxiv.org/pdf/2202.13393)]:
 ```
-@article{liu2022transkd,
-  title={TransKD: Transformer Knowledge Distillation for Efficient Semantic Segmentation},
-  author={Liu, Ruiping and Yang, Kailun and Roitberg, Alina and Zhang, Jiaming and Peng, Kunyu and Liu, Huayao and Stiefelhagen, Rainer},
-  journal={arXiv preprint arXiv:2202.13393},
-  year={2022}
-}
+@ARTICLE{10689329,
+  author={Liu, Ruiping and Yang, Kailun and Roitberg, Alina and Zhang, Jiaming and Peng, Kunyu and Liu, Huayao and Wang, Yaonan and Stiefelhagen, Rainer},
+  journal={IEEE Transactions on Intelligent Transportation Systems}, 
+  title={TransKD: Transformer Knowledge Distillation for Efficient Semantic Segmentation}, 
+  year={2024},
+  volume={25},
+  number={12},
+  pages={20933-20949},
+  keywords={Transformers;Semantic segmentation;Computer vision;Feature extraction;Knowledge engineering;Training;Computational modeling;Autonomous driving;Knowledge distillation;semantic segmentation;scene parsing;vision transformer;scene understanding},
+  doi={10.1109/TITS.2024.3455416}}
 ```
